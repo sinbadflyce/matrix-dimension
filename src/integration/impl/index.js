@@ -5,6 +5,7 @@ var RSSFactory = require("./rss/RSSFactory");
 var IRCFactory = require("./irc/IRCFactory");
 var TravisCiFactory = require("./travisci/TravisCiFactory");
 var SimpleWidgetFactory = require("./simple_widget/SimpleWidgetFactory");
+var WebhooksFactory = require("./webhooks/WebhooksFactory");
 
 var mapping = {
     "complex-bot": {
@@ -13,6 +14,7 @@ var mapping = {
     },
     "bridge": {
         "irc": IRCFactory,
+        "webhooks": WebhooksFactory,
     }
 };
 

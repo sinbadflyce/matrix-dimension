@@ -1,0 +1,11 @@
+type: "bridge"
+integrationType: "webhooks"
+enabled: false
+name: "Webhooks"
+about: "Slack-compatible webhooks for your room"
+avatar: "img/avatars/webhooks.png"
+requirements:
+  joinRule: 'public' # to make sure the bridge can join
+hosted:
+  apiUrl: http://localhost:4501/
+  apiToken: YOUR_TOKEN_HERE

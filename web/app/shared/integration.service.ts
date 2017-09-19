@@ -5,6 +5,7 @@ import { ContainerContent } from "ngx-modialog";
 import { IrcConfigComponent } from "../configs/irc/irc-config.component";
 import { TravisCiConfigComponent } from "../configs/travisci/travisci-config.component";
 import { CustomWidgetConfigComponent } from "../configs/widget/custom_widget/custom_widget-config.component";
+import { WebhooksConfigComponent } from "../configs/webooks/webhooks-config.component";
 
 @Injectable()
 export class IntegrationService {
@@ -17,6 +18,7 @@ export class IntegrationService {
         },
         "bridge": {
             "irc": true,
+            "webhooks": true,
         },
         "widget": {
             "customwidget": true
@@ -30,6 +32,7 @@ export class IntegrationService {
         },
         "bridge": {
             "irc": IrcConfigComponent,
+            "webhooks": WebhooksConfigComponent,
         },
         "widget": {
             "customwidget": CustomWidgetConfigComponent,

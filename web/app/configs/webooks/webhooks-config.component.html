@@ -1,0 +1,22 @@
+<div class="config-wrapper">
+    <img src="/img/close.svg" (click)="dialog.close()" class="close-icon">
+    <div class="config-header">
+        <img src="/img/avatars/webhooks.png">
+        <h4>Configure Webhooks</h4>
+    </div>
+    <div class="config-content">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-12">
+                <h6>Webhooks</h6>
+                <p *ngIf="integration.hooks.length <= 0">No webhooks configured for this room.</p>
+            </div>
+            <div class="col-md-12" *ngFor="let hook of integration.hooks">
+                <strong>{{ hook.url }}</strong>
+                <span class="text-muted">Added by {{ hook.userId }}</span>
+                <button type="button" class="btn btn-outline-danger btn-sm" (click)="removeHook(hook)" [disabled]="hookIsBeingRemoved(hook)">
+                    <i class="fa fa-times"></i> Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

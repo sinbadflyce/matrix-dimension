@@ -24,6 +24,8 @@ import { IrcApiService } from "./shared/irc-api.service";
 import { TravisCiConfigComponent } from "./configs/travisci/travisci-config.component";
 import { CustomWidgetConfigComponent } from "./configs/widget/custom_widget/custom_widget-config.component";
 import { MyFilterPipe } from "./shared/my-filter.pipe";
+import { WebhooksConfigComponent } from "./configs/webooks/webhooks-config.component";
+import { WebhooksApiService } from "./shared/webhooks-api.service";
 
 @NgModule({
     imports: [
@@ -49,6 +51,7 @@ import { MyFilterPipe } from "./shared/my-filter.pipe";
         TravisCiConfigComponent,
         CustomWidgetConfigComponent,
         MyFilterPipe,
+        WebhooksConfigComponent,
 
         // Vendor
     ],
@@ -57,6 +60,7 @@ import { MyFilterPipe } from "./shared/my-filter.pipe";
         ScalarService,
         IntegrationService,
         IrcApiService,
+        WebhooksApiService,
 
         // Vendor
     ],
@@ -66,6 +70,7 @@ import { MyFilterPipe } from "./shared/my-filter.pipe";
         TravisCiConfigComponent,
         IrcConfigComponent,
         CustomWidgetConfigComponent,
+        WebhooksConfigComponent,
     ]
 })
 export class AppModule {

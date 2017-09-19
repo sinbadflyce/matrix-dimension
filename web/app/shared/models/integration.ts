@@ -27,3 +27,7 @@ export interface IRCIntegration extends Integration {
     availableNetworks: {name: string, id: string}[];
     channels: {[networkId: string]: string[]};
 }
+
+export interface WebhooksIntegration extends Integration {
+    hooks: {id: string, url: string, userId: string, roomId: string, type: "incoming"}[];
+}

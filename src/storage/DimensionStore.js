@@ -103,6 +103,18 @@ class DimensionStore {
             return token.upstreamToken;
         });
     }
+
+    /**
+     * Gets the user ID that owns a particular token
+     * @param {string} scalarToken the scalar token to lookup
+     * @returns {Promise<string>} resolves to the user ID that owns the token, or null if not found
+     */
+    getUserId(scalarToken) {
+        return this.__Tokens.find({where: {scalarToken: scalarToken}}).then(token => {
+            if (!token) return null;
+            return token.matrixUserId;
+        });
+    }
 }
 
 module.exports = DimensionStore;

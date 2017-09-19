@@ -32,7 +32,8 @@ class IRCBridge extends Bridge {
 
     /*override*/
     removeFromRoom(roomId) {
-        return this._backbone.removeFromRoom(roomId);
+        // return this._backbone.removeFromRoom(roomId);
+        throw new Error("Cannot remove from rooms. Use the IRC API");
     }
 
     /*override*/
