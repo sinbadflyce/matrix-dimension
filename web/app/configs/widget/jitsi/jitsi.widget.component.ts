@@ -39,7 +39,7 @@ export class JitsiWidgetConfigComponent extends WidgetComponent {
             } else widget.data.confId = confId;
 
             if (domain) widget.data.domain = domain;
-            else widget.data.domain = "jitsi.riot.im";
+            else widget.data.domain = "meet.jit.si";
 
             widget.data.isAudioConf = isAudioConf;
             widget.data.conferenceUrl = "https://" + widget.data.domain + "/" + widget.data.confId;
@@ -49,7 +49,7 @@ export class JitsiWidgetConfigComponent extends WidgetComponent {
     protected OnNewWidgetPrepared(widget: EditableWidget): void {
         const name = this.nameService.getHumanReadableName();
 
-        let rootUrl = "https://jitsi.riot.im/";
+        let rootUrl = "https://meet.jit.si/";
         if (this.jitsiWidget.options && this.jitsiWidget.options.jitsiDomain) {
             rootUrl = "https://" + this.jitsiWidget.options.jitsiDomain + "/";
         }

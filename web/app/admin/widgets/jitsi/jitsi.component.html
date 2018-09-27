@@ -7,14 +7,14 @@
             Jitsi Domain
             <span class="text-muted ">This is the domain that is used to host the conference.</span>
             <input type="text" class="form-control"
-                   placeholder="jitsi.riot.im"
+                   placeholder="meet.jit.si"
                    [(ngModel)]="widget.options.jitsiDomain" [disabled]="isUpdating"/>
         </label>
         <label class="label-block">
             Jitsi Script URL
             <span class="text-muted ">This is used to create the Jitsi widget. It is normally at /libs/external_api.min.js from your domain.</span>
             <input type="text" class="form-control"
-                   placeholder="https://jitsi.riot.im/libs/external_api.min.js"
+                   placeholder="https://meet.jit.si/libs/external_api.min.js"
                    [(ngModel)]="widget.options.scriptUrl" [disabled]="isUpdating"/>
         </label>
     </div>

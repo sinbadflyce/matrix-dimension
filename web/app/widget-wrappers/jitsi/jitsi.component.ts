@@ -29,7 +29,7 @@ export class JitsiWidgetWrapperComponent extends CapableWidget implements OnInit
 
         let params: any = activatedRoute.snapshot.queryParams;
 
-        this.domain = params.domain || "jitsi.riot.im"; // Riot doesn't supply a domain, so we default
+        this.domain = params.domain || "meet.jit.si"; // Riot doesn't supply a domain, so we default
         this.conferenceId = params.confId || params.conferenceId;
         this.displayName = params.displayName;
         this.avatarUrl = params.avatarUrl;

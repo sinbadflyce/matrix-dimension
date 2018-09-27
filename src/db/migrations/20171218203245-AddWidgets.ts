@@ -71,7 +71,7 @@ export default {
                     isPublic: true,
                     avatarUrl: "/img/avatars/jitsi.png",
                     description: "Hold a video conference with Jitsi Meet",
-                    optionsJson: '{"jitsiDomain":"jitsi.riot.im", "scriptUrl":"https://jitsi.riot.im/libs/external_api.min.js"}',
+                    optionsJson: '{"jitsiDomain":"meet.jit.si", "scriptUrl":"https://meet.jit.si/libs/external_api.min.js"}',
                 },
             ]));
     },

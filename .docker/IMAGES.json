@@ -1,0 +1,9 @@
+{
+  "images": [
+    {
+      "tag": "corpusops/matrix-dimension:latest",
+      "builder_type": "docker",
+      "extra_args": ""
+    }
+  ]
+}
